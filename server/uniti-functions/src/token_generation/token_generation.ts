@@ -5,8 +5,8 @@ import { AccessToken, RoomServiceClient } from "livekit-server-sdk";
 
 import type {
 	ApiResponse,
-	TokenRequestDTO,
-	TokenResponseDTO,
+	LivekitTokenRequest,
+	LivekitTokenDTO,
 } from "@uniti/api-models";
 
 const livekitHostUrl = defineSecret("LIVEKIT_HOST_URL");
@@ -32,7 +32,8 @@ export const createToken = onRequest(
 		};
 
 		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-		const requestData: TokenRequestDTO = request.body.data;
+		const requestData: LivekitTokenRequest = request.body.data;
+
 		const { roomName, participantName } = requestData;
 
 		logger.info("Creating token for room", {
@@ -55,7 +56,7 @@ export const createToken = onRequest(
 			return;
 		}
 
-		const responseData: ApiResponse<TokenResponseDTO> = {
+		const responseData: ApiResponse<LivekitTokenDTO> = {
 			isSuccess: true,
 			data: {
 				token: token,

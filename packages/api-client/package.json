@@ -1,5 +1,5 @@
 {
-  "name": "@uniti/api-models",
+  "name": "@uniti/api-client",
   "type": "module",
   "version": "1.0.0",
   "description": "",
@@ -10,6 +10,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@react-native-firebase/functions": "^21.7.1",
+    "@uniti/api-models": "workspace:*",
+    "firebase": "11.2.0",
+    "install": "^0.13.0",
+    "npm": "^11.1.0"
+  },
   "devDependencies": {
     "@uniti/eslint-config": "workspace:*",
     "@uniti/prettier-config": "workspace:*",

@@ -1,7 +1,7 @@
 /**
  * Request data for generating a token
  */
-export interface TokenRequestDTO {
+export interface LivekitTokenRequest {
 	roomName: string;
 	participantName: string;
 }
@@ -9,6 +9,6 @@ export interface TokenRequestDTO {
 /**
  * Response data for generating a token
  */
-export interface TokenResponseDTO {
+export interface LivekitTokenDTO {
 	token: string;
 }
