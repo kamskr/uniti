@@ -3,20 +3,15 @@ import { logger } from "firebase-functions/v2";
 import { onRequest } from "firebase-functions/v2/https";
 import { AccessToken, RoomServiceClient } from "livekit-server-sdk";
 
-import type { ApiResponse } from "../models";
+import type {
+	ApiResponse,
+	TokenRequestDTO,
+	TokenResponseDTO,
+} from "@uniti/api-models";
 
 const livekitHostUrl = defineSecret("LIVEKIT_HOST_URL");
 const livekitApiKey = defineSecret("LIVEKIT_API_KEY");
 const livekitApiSecret = defineSecret("LIVEKIT_API_SECRET");
-
-interface TokenRequest {
-	roomName: string;
-	participantName: string;
-}
-
-interface TokenResponse {
-	token: string;
-}
 
 interface LivekitSecrets {
 	livekitHostUrl: string;
@@ -37,7 +32,7 @@ export const createToken = onRequest(
 		};
 
 		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-		const requestData: TokenRequest = request.body.data;
+		const requestData: TokenRequestDTO = request.body.data;
 		const { roomName, participantName } = requestData;
 
 		logger.info("Creating token for room", {
@@ -60,7 +55,7 @@ export const createToken = onRequest(
 			return;
 		}
 
-		const responseData: ApiResponse<TokenResponse> = {
+		const responseData: ApiResponse<TokenResponseDTO> = {
 			isSuccess: true,
 			data: {
 				token: token,

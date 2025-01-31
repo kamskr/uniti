@@ -1,5 +1,5 @@
 {
   "extends": "@uniti/tsconfig/internal-package.json",
-  "include": ["src"],
+  "include": ["."],
   "exclude": ["node_modules"]
 }
