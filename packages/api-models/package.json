@@ -1,0 +1,21 @@
+{
+  "name": "@uniti/api-models",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@uniti/eslint-config": "workspace:*",
+    "@uniti/prettier-config": "workspace:*",
+    "@uniti/tsconfig": "workspace:*",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "typescript": "catalog:"
+  },
+  "prettier": "@uniti/prettier-config"
+}
