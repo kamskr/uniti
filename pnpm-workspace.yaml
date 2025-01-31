@@ -1,6 +1,8 @@
 packages:
   - 'apps/*'
   - 'packages/*'
+  - 'server/*'
+  - 'tooling/*'
 
 catalog:
   "@tanstack/react-query": ^5.64.2
