@@ -10,6 +10,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@uniti/api-client": "workspace:*",
+    "@uniti/api-models": "workspace:*",
+    "livekit-client": "^2.7.5"
+  },
   "devDependencies": {
     "@uniti/eslint-config": "workspace:*",
     "@uniti/prettier-config": "workspace:*",

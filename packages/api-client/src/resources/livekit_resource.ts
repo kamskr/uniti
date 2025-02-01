@@ -10,7 +10,9 @@ import type {
 export class LivekitResource {
 	constructor(private readonly httpsCallable: HttpsCallableT) { }
 
-	async createToken(request: LivekitTokenRequest): Promise<LivekitTokenDTO> {
+	async generateAccessToken(
+		request: LivekitTokenRequest,
+	): Promise<LivekitTokenDTO> {
 		try {
 			const response = await this.httpsCallable.call("createToken", request);
 
