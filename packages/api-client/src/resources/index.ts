@@ -1,1 +1,1 @@
-export * from './livekit_resource';
+export * from "./livekit_resource";

@@ -1,5 +1,5 @@
 // import type { HttpsCallableT } from "@/types";
-import { LivekitResource } from "@/resources";
+import { LivekitResource } from "./resources";
 
 export class ApiClient {
 	livekitResource: LivekitResource;

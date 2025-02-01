@@ -21,6 +21,13 @@ catalogs:
     typescript:
       specifier: ^5.7.3
       version: 5.7.3
+  react18:
+    '@types/react':
+      specifier: ^18.3.11
+      version: 18.3.18
+    react:
+      specifier: 18.3.1
+      version: 18.3.1
 
 importers:
 
@@ -63,17 +70,23 @@ importers:
         specifier: ~2.0.1
         version: 2.0.1(react-native@0.76.6(@babel/core@7.26.7)(@babel/preset-env@7.26.7(@babel/core@7.26.7))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1)
       react:
-        specifier: 18.3.1
+        specifier: catalog:react18
         version: 18.3.1
       react-native:
         specifier: 0.76.6
         version: 0.76.6(@babel/core@7.26.7)(@babel/preset-env@7.26.7(@babel/core@7.26.7))(@types/react@18.3.18)(react@18.3.1)
+      zustand:
+        specifier: ^5.0.3
+        version: 5.0.3(@types/react@18.3.18)(react@18.3.1)
+      zustand-di:
+        specifier: ^0.0.16
+        version: 0.0.16(react@18.3.1)(zustand@5.0.3(@types/react@18.3.18)(react@18.3.1))
     devDependencies:
       '@babel/core':
         specifier: ^7.25.2
         version: 7.26.7
       '@types/react':
-        specifier: ~18.3.12
+        specifier: catalog:react18
         version: 18.3.18
       '@uniti/eslint-config':
         specifier: workspace:*
@@ -85,7 +98,7 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/typescript
       typescript:
-        specifier: ^5.3.3
+        specifier: 'catalog:'
         version: 5.7.3
 
   packages/api-client:
@@ -6255,6 +6268,30 @@ packages:
   yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+
+  zustand-di@0.0.16:
+    resolution: {integrity: sha512-d0KoomJAgqNPi/HO1SPa9O8cPsPEWLZ3k+1qBpa2GqnyT+7BLWez5/SLIzC3n4WQnFFpZrpNXEbZsjC+ikeJOA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      zustand: ^4.4.0 || ^5.0.0
+
+  zustand@5.0.3:
+    resolution: {integrity: sha512-14fwWQtU3pH4dE0dOpdMiWjddcH+QzKIgk1cl8epwSE7yag43k/AD/m4L6+K7DytAOr9gGBe3/EXj9g7cdostg==}
+    engines: {node: '>=12.20.0'}
+    peerDependencies:
+      '@types/react': '>=18.0.0'
+      immer: '>=9.0.6'
+      react: '>=18.0.0'
+      use-sync-external-store: '>=1.2.0'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      immer:
+        optional: true
+      react:
+        optional: true
+      use-sync-external-store:
+        optional: true
 
 snapshots:
 
@@ -13870,3 +13907,13 @@ snapshots:
   yn@3.1.1: {}
 
   yocto-queue@0.1.0: {}
+
+  zustand-di@0.0.16(react@18.3.1)(zustand@5.0.3(@types/react@18.3.18)(react@18.3.1)):
+    dependencies:
+      react: 18.3.1
+      zustand: 5.0.3(@types/react@18.3.18)(react@18.3.1)
+
+  zustand@5.0.3(@types/react@18.3.18)(react@18.3.1):
+    optionalDependencies:
+      '@types/react': 18.3.18
+      react: 18.3.1
