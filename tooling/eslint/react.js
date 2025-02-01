@@ -1,3 +1,4 @@
+import tanstackQueryPlugin from "@tanstack/eslint-plugin-query";
 import reactPlugin from "eslint-plugin-react";
 import hooksPlugin from "eslint-plugin-react-hooks";
 
@@ -8,6 +9,7 @@ export default [
     plugins: {
       react: reactPlugin,
       "react-hooks": hooksPlugin,
+      "@tanstack/query": tanstackQueryPlugin,
     },
     rules: {
       ...reactPlugin.configs["jsx-runtime"].rules,
