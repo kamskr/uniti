@@ -1,55 +1,55 @@
-import { ResourceException } from ".";
+import { ResourceException } from "./resource_exception";
 
 /**
  * Thrown when the API response is invalid.
  */
 export class ApiInvalidResponseFailure extends Error {
-	constructor(
-		public readonly statusCode?: number,
-		public readonly body?: object,
-		public readonly data?: string,
-		public readonly error?: unknown,
-	) {
-		super("Invalid API Response");
-		this.name = "ApiInvalidResponseFailure";
-	}
+  constructor(
+    public readonly statusCode?: number,
+    public readonly body?: object,
+    public readonly data?: string,
+    public readonly error?: unknown,
+  ) {
+    super("Invalid API Response");
+    this.name = "ApiInvalidResponseFailure";
+  }
 }
 
 /**
  * Thrown when a timeout occurs during a request.
  */
 export class ApiRequestTimeoutFailure extends Error {
-	constructor(public readonly error: unknown) {
-		super("API Request Timeout");
-		this.name = "ApiRequestTimeoutFailure";
-	}
+  constructor(public readonly error: unknown) {
+    super("API Request Timeout");
+    this.name = "ApiRequestTimeoutFailure";
+  }
 }
 
 /**
  * Thrown when a network error occurs during a request.
  */
 export class ApiRequestNetworkFailure extends Error {
-	constructor(public readonly error: unknown) {
-		super("API Network Error");
-		this.name = "ApiRequestNetworkFailure";
-	}
+  constructor(public readonly error: unknown) {
+    super("API Network Error");
+    this.name = "ApiRequestNetworkFailure";
+  }
 }
 
 /**
  * Thrown when an error occurs during a request.
  */
 export class ApiRequestFailure extends Error {
-	constructor(public readonly error: unknown) {
-		super("API Request Failed");
-		this.name = "ApiRequestFailure";
-	}
+  constructor(public readonly error: unknown) {
+    super("API Request Failed");
+    this.name = "ApiRequestFailure";
+  }
 
-	get errorReason(): string {
-		if (this.error instanceof ResourceException) {
-			return this.error.response?.message ?? this.error.error;
-		}
-		return String(this.error);
-	}
+  get errorReason(): string {
+    if (this.error instanceof ResourceException) {
+      return this.error.response?.message ?? this.error.error;
+    }
+    return String(this.error);
+  }
 }
 
 /**
@@ -60,6 +60,6 @@ export class ApiRequestFailure extends Error {
  * - ApiRequestFailure if the request failed for any other reason.
  */
 export function handleApiError(error: unknown): never {
-	// Handle unknown errors
-	throw new ApiRequestFailure(error);
+  // Handle unknown errors
+  throw new ApiRequestFailure(error);
 }

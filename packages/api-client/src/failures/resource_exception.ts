@@ -8,11 +8,11 @@ import type { ApiResponse } from "@uniti/api-models";
  * appropriate error reason based on the response.
  */
 export class ResourceException extends Error {
-	constructor(
-		public readonly error: string,
-		public readonly response?: ApiResponse<unknown>,
-	) {
-		super(response?.message);
-		this.name = "ResourceException";
-	}
+  constructor(
+    public readonly error: string,
+    public readonly response?: ApiResponse<unknown>,
+  ) {
+    super(response?.message);
+    this.name = "ResourceException";
+  }
 }
