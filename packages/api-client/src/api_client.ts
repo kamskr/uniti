@@ -1,11 +1,11 @@
-// import type { HttpsCallableT } from "@/types";
+import type { HttpsCallableT } from "@/types";
+
 import { LivekitResource } from "./resources";
 
 export class ApiClient {
-	livekitResource: LivekitResource;
+  livekitResource: LivekitResource;
 
-	constructor() {
-		// this.livekitResource = new LivekitResource(httpsCallable);
-		this.livekitResource = new LivekitResource();
-	}
+  constructor(httpsCallable: HttpsCallableT) {
+    this.livekitResource = new LivekitResource(httpsCallable);
+  }
 }
