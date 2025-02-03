@@ -1,7 +1,8 @@
 import { StyleSheet, Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { TestComponent } from "@/features/test/TestComponent";
-import { RepositoryProvider, useAppInitializer } from "@/store/app_initializer";
+import { useAppInitializer } from "@/store/app_initializer";
+import { RepositoryProvider } from "@/store/repository_provider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const queryClient = new QueryClient();

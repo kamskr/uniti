@@ -1,41 +1,12 @@
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useContext } from "react";
 
 import { ApiClient } from "@uniti/api-client";
 import { LivekitRepository } from "@uniti/livekit-repository";
 
-interface Repositories {
+export interface Repositories {
   apiClient: ApiClient;
   livekitRepository: LivekitRepository;
 }
-
-export const useAppInitializer = () => {
-  const [repositories, setRepositories] = useState<Repositories | null>(null);
-  const [initializationError, setInitializationError] = useState<Error | null>(
-    null,
-  );
-
-  useEffect(() => {
-    const prepare = () => {
-      try {
-        const apiClient = new ApiClient();
-        const livekitRepository = new LivekitRepository("test", apiClient);
-
-        const repositories: Repositories = {
-          apiClient,
-          livekitRepository,
-        };
-
-        setRepositories(repositories);
-      } catch (e) {
-        setInitializationError(Error("Failed to initialize app."));
-      }
-    };
-
-    void prepare();
-  }, []);
-
-  return { repositories, initializationError };
-};
 
 const RepositoryContext = createContext<Repositories | null>(null);
 
