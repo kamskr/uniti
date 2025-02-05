@@ -1,22 +1,5 @@
 {
-  "compilerOptions": {
-    "module": "Preserve",
-    "moduleResolution": "Bundler",
-    "esModuleInterop": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "outDir": "lib",
-    "sourceMap": true,
-    "strict": true,
-    "target": "es2017",
-    "skipLibCheck": true
-  },
-  "compileOnSave": true,
-  "include": [
-    "src"
-  ], 
-  "exclude": [
-    "node_modules",
-    "/lib"
-  ]
+  "extends": "@uniti/tsconfig/internal-package.json",
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
