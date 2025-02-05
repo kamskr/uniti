@@ -1,7 +1,8 @@
-import { CreateRoomFailure, GenerateAccessTokenFailure } from "@/failures";
 import { Room } from "livekit-client";
 
 import type { ApiClient } from "@uniti/api-client";
+
+import { CreateRoomFailure, GenerateAccessTokenFailure } from "./failures";
 
 /**
  * Package for managing LiveKit integration.

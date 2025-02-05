@@ -1,30 +1,44 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { useAppInitializer } from "@/store/app_initializer";
-import { RepositoryProvider } from "@/store/repository_provider";
+import { PrejoinPage } from "@/features/rooms/view/PrejoinPage";
+import { useAppInitializer } from "@/providers/app_initializer";
+import { RepositoryProvider } from "@/providers/repository_provider";
+import analytics from "@react-native-firebase/analytics";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const queryClient = new QueryClient();
 
 export default function App() {
-  // const { repositories, initializationError } = useAppInitializer();
+  const { repositories, initializationError } = useAppInitializer();
 
-  // if (initializationError) {
-  //   return <Text>Failed to initialize app.</Text>;
-  // }
+  if (initializationError) {
+    return <Text>Failed to initialize app.</Text>;
+  }
 
-  // if (!repositories) {
-  //   return null;
-  // }
+  if (!repositories) {
+    return null;
+  }
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* <RepositoryProvider repositories={repositories}> */}
-      <View style={styles.container}>
-        <Text>Open up App.tsxx to start working on your app!</Text>
-        <StatusBar style="auto" />
-      </View>
-      {/* </RepositoryProvider> */}
+      <RepositoryProvider repositories={repositories}>
+        <View style={styles.container}>
+          <Text>Open up App.tsx to start working on your app!</Text>
+          <StatusBar style="auto" />
+          <Button
+            title="Press me"
+            // Logs in the firebase analytics console as "select_content" event
+            // only accepts the two object properties which accept strings.
+            onPress={async () =>
+              await analytics().logSelectContent({
+                content_type: "clothing",
+                item_id: "abcd",
+              })
+            }
+          />
+          <PrejoinPage />
+        </View>
+      </RepositoryProvider>
     </QueryClientProvider>
   );
 }

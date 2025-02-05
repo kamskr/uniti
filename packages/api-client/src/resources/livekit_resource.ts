@@ -1,5 +1,4 @@
-import type { HttpsCallableT } from "@/types";
-import { handleApiError, ResourceException } from "@/failures";
+import type { FirebaseFunctionsTypes } from "@react-native-firebase/functions";
 
 import type {
   ApiResponse,
@@ -7,14 +6,19 @@ import type {
   LivekitTokenRequest,
 } from "@uniti/api-models";
 
+import { handleApiError, ResourceException } from "../failures";
+
 export class LivekitResource {
-  constructor(private readonly httpsCallable: HttpsCallableT) {}
+  constructor(private readonly functions: FirebaseFunctionsTypes.Module) {}
 
   async generateAccessToken(
     request: LivekitTokenRequest,
   ): Promise<LivekitTokenDTO> {
     try {
-      const response = await this.httpsCallable.call("createToken", request);
+      console.log(this.functions);
+      const response = await this.functions
+        .httpsCallable("createToken")
+        .call(request);
 
       const responseData: ApiResponse<LivekitTokenDTO> =
         response.data as ApiResponse<LivekitTokenDTO>;
@@ -39,6 +43,7 @@ export class LivekitResource {
 
       return responseData.data;
     } catch (error) {
+      console.log(error);
       handleApiError(error);
     }
   }
