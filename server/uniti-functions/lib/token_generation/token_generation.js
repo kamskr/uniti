@@ -14,10 +14,6 @@ export const createToken = onCall({
         livekitApiKey: livekitApiKey.value(),
         livekitApiSecret: livekitApiSecret.value(),
     };
-    logger.error("Request", {
-        structuredData: true,
-        data: { body: request },
-    });
     const requestData = request.data;
     if (!requestData) {
         logger.error("Request data is null or undefined", {

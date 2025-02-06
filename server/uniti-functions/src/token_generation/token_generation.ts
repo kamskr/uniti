@@ -32,10 +32,6 @@ export const createToken = onCall(
       livekitApiSecret: livekitApiSecret.value(),
     };
 
-    logger.log("Request", {
-      structuredData: true,
-      data: { body: request.data },
-    });
     const requestData = request.data as LivekitTokenRequest;
 
     if (!requestData) {

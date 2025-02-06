@@ -23,7 +23,7 @@ export const useAppInitializer = () => {
         }
 
         const apiClient = new ApiClient(functionsInstance);
-        const livekitRepository = new LivekitRepository("test", apiClient);
+        const livekitRepository = new LivekitRepository("ws://localhost:7880", apiClient);
 
         const repositories: Repositories = {
           apiClient,
