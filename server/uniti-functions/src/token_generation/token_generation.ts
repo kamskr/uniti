@@ -1,7 +1,7 @@
-import type { Request } from "firebase-functions/v2/https";
+import type { CallableRequest } from "firebase-functions/v2/https";
 import { defineSecret } from "firebase-functions/params";
 import { logger } from "firebase-functions/v2";
-import { onRequest } from "firebase-functions/v2/https";
+import { onCall } from "firebase-functions/v2/https";
 import { AccessToken, RoomServiceClient } from "livekit-server-sdk";
 
 import type {
@@ -20,37 +20,33 @@ interface LivekitSecrets {
   livekitApiSecret: string;
 }
 
-interface RequestBody<T> {
-  data: T;
-}
-
-export const createToken = onRequest(
+export const createToken = onCall(
   {
     secrets: [livekitHostUrl, livekitApiKey, livekitApiSecret],
     cors: true,
   },
-  async (request: Request, response) => {
+  async (request: CallableRequest<LivekitTokenRequest>): Promise<ApiResponse<LivekitTokenDTO>> => {
     const livekitSecrets: LivekitSecrets = {
       livekitHostUrl: livekitHostUrl.value(),
       livekitApiKey: livekitApiKey.value(),
       livekitApiSecret: livekitApiSecret.value(),
     };
 
-    console.log("RUNNING HEREEEE");
-    console.log("Request body:", request.body);
-
-    const requestData = request.body as LivekitTokenRequest;
+    logger.log("Request", {
+      structuredData: true,
+      data: { body: request.data },
+    });
+    const requestData = request.data as LivekitTokenRequest;
 
     if (!requestData) {
       logger.error("Request data is null or undefined", {
         structuredData: true,
-        data: { body: request.body },
+        data: { body: request.data },
       });
-      response.status(400).send({ 
-        isSuccess: false, 
-        message: "Request data is missing" 
-      });
-      return;
+      return {
+        isSuccess: false,
+        message: "Request data is missing",
+      };
     }
 
     const { roomName, participantName } = requestData;
@@ -71,8 +67,10 @@ export const createToken = onRequest(
         structuredData: true,
         data: { token: token },
       });
-      response.status(500).send("Error generating token");
-      return;
+      return {
+        isSuccess: false,
+        message: "Error generating token",
+      };
     }
 
     const responseData: ApiResponse<LivekitTokenDTO> = {
@@ -87,7 +85,7 @@ export const createToken = onRequest(
       data: responseData,
     });
 
-    response.send({ data: responseData });
+    return responseData;
   },
 );
 

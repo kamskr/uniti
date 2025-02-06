@@ -15,9 +15,11 @@ export class LivekitResource {
     request: LivekitTokenRequest,
   ): Promise<LivekitTokenDTO> {
     try {
+      console.log("Request body:", request);
+
       const response = await this.functions
         .httpsCallable("createToken")
-        .call({ data: request });
+        .call(request);
 
       const responseData: ApiResponse<LivekitTokenDTO> =
         response.data as ApiResponse<LivekitTokenDTO>;

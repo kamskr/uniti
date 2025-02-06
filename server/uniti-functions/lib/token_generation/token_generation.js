@@ -1,32 +1,33 @@
 import { defineSecret } from "firebase-functions/params";
 import { logger } from "firebase-functions/v2";
-import { onRequest } from "firebase-functions/v2/https";
+import { onCall } from "firebase-functions/v2/https";
 import { AccessToken, RoomServiceClient } from "livekit-server-sdk";
 const livekitHostUrl = defineSecret("LIVEKIT_HOST_URL");
 const livekitApiKey = defineSecret("LIVEKIT_API_KEY");
 const livekitApiSecret = defineSecret("LIVEKIT_API_SECRET");
-export const createToken = onRequest({
+export const createToken = onCall({
     secrets: [livekitHostUrl, livekitApiKey, livekitApiSecret],
     cors: true,
-}, async (request, response) => {
+}, async (request) => {
     const livekitSecrets = {
         livekitHostUrl: livekitHostUrl.value(),
         livekitApiKey: livekitApiKey.value(),
         livekitApiSecret: livekitApiSecret.value(),
     };
-    console.log("RUNNING HEREEEE");
-    console.log("Request body:", request.body);
-    const requestData = request.body;
+    logger.error("Request", {
+        structuredData: true,
+        data: { body: request },
+    });
+    const requestData = request.data;
     if (!requestData) {
         logger.error("Request data is null or undefined", {
             structuredData: true,
-            data: { body: request.body },
+            data: { body: request.data },
         });
-        response.status(400).send({
+        return {
             isSuccess: false,
-            message: "Request data is missing"
-        });
-        return;
+            message: "Request data is missing",
+        };
     }
     const { roomName, participantName } = requestData;
     logger.info("Creating token for room", {
@@ -39,8 +40,10 @@ export const createToken = onRequest({
             structuredData: true,
             data: { token: token },
         });
-        response.status(500).send("Error generating token");
-        return;
+        return {
+            isSuccess: false,
+            message: "Error generating token",
+        };
     }
     const responseData = {
         isSuccess: true,
@@ -52,7 +55,7 @@ export const createToken = onRequest({
         structuredData: true,
         data: responseData,
     });
-    response.send({ data: responseData });
+    return responseData;
 });
 /**
  * Check if the user can publish tracks in the room.
