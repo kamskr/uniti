@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+import type { Request } from "firebase-functions/v2/https";
 import { defineSecret } from "firebase-functions/params";
 import { logger } from "firebase-functions/v2";
 import { onRequest } from "firebase-functions/v2/https";
@@ -21,20 +20,27 @@ interface LivekitSecrets {
   livekitApiSecret: string;
 }
 
+interface RequestBody<T> {
+  data: T;
+}
+
 export const createToken = onRequest(
   {
     secrets: [livekitHostUrl, livekitApiKey, livekitApiSecret],
     cors: true,
   },
-  async (request, response) => {
+  async (request: Request, response) => {
     const livekitSecrets: LivekitSecrets = {
       livekitHostUrl: livekitHostUrl.value(),
       livekitApiKey: livekitApiKey.value(),
       livekitApiSecret: livekitApiSecret.value(),
     };
 
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-    const requestData: LivekitTokenRequest = request.body.data;
+    console.log("RUNNING HEREEEE");
+    console.log(request);
+    response.send({ data: "test" });
+
+    const requestData = (request.body as RequestBody<LivekitTokenRequest>).data;
 
     const { roomName, participantName } = requestData;
 

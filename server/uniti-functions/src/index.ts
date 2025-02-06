@@ -7,4 +7,4 @@
  * See a full list of supported triggers at https://firebase.google.com/docs/functions
  */
 
-export * from "./token_generation/token_generation.js";
+export * from "./token_generation/token_generation";

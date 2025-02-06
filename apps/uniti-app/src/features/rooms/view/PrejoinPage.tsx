@@ -5,7 +5,7 @@ import { useQuery } from "@tanstack/react-query";
 export const PrejoinPage = () => {
   const livekitRepository = useLivekitRepository();
 
-  const { isPending, error, data } = useQuery({
+  const { isPending, error, data, isFetching, refetch } = useQuery({
     queryKey: ["livekit-room"],
     queryFn: () =>
       livekitRepository.joinRoom({
@@ -14,11 +14,18 @@ export const PrejoinPage = () => {
       }),
   });
 
-  if (isPending) return <Text>Loading...</Text>;
-  if (error) return <Text>Error: {JSON.stringify(error)}</Text>;
+  if (isFetching) return <Text>Loading...</Text>;
+  if (error)
+    return (
+      <View>
+        <Text>Error: {JSON.stringify(error)}</Text>
+        <Button title="Refetch" onPress={() => refetch()} />
+      </View>
+    );
 
   return (
     <View>
+      <Text>{data?.localParticipant.name}</Text>
       <Text>{data?.localParticipant.name}</Text>
       <Text>{data?.name}</Text>
     </View>

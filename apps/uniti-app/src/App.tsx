@@ -25,17 +25,6 @@ export default function App() {
         <View style={styles.container}>
           <Text>Open up App.tsx to start working on your app!</Text>
           <StatusBar style="auto" />
-          <Button
-            title="Press me"
-            // Logs in the firebase analytics console as "select_content" event
-            // only accepts the two object properties which accept strings.
-            onPress={async () =>
-              await analytics().logSelectContent({
-                content_type: "clothing",
-                item_id: "abcd",
-              })
-            }
-          />
           <PrejoinPage />
         </View>
       </RepositoryProvider>
