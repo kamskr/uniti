@@ -37,10 +37,21 @@ export const createToken = onRequest(
     };
 
     console.log("RUNNING HEREEEE");
-    console.log(request);
-    response.send({ data: "test" });
+    console.log("Request body:", request.body);
 
-    const requestData = (request.body as RequestBody<LivekitTokenRequest>).data;
+    const requestData = request.body as LivekitTokenRequest;
+
+    if (!requestData) {
+      logger.error("Request data is null or undefined", {
+        structuredData: true,
+        data: { body: request.body },
+      });
+      response.status(400).send({ 
+        isSuccess: false, 
+        message: "Request data is missing" 
+      });
+      return;
+    }
 
     const { roomName, participantName } = requestData;
 

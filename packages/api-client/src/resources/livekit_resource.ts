@@ -17,7 +17,7 @@ export class LivekitResource {
     try {
       const response = await this.functions
         .httpsCallable("createToken")
-        .call(request);
+        .call({ data: request });
 
       const responseData: ApiResponse<LivekitTokenDTO> =
         response.data as ApiResponse<LivekitTokenDTO>;
