@@ -27,7 +27,13 @@ firebase login
 firebase init
 ```
 
-4. Run locally 
+4. Build
+
+Sometimes you may see the issue "module not found..." after build and serve.
+
+To fix that, add .js to each export in dist/index.js
+
+5. Run locally 
 
 ```bash
 livekit-server --dev
@@ -35,6 +41,4 @@ firebase emulators:start --only functions
 ```
 
 You can access local emulator connected to local LiveKit server at `127.0.0.1` and port `5001`.
-
-
 
