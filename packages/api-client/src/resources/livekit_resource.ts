@@ -15,7 +15,6 @@ export class LivekitResource {
     request: LivekitTokenRequest,
   ): Promise<LivekitTokenDTO> {
     try {
-      console.log(this.functions);
       const response = await this.functions
         .httpsCallable("createToken")
         .call(request);
@@ -43,7 +42,6 @@ export class LivekitResource {
 
       return responseData.data;
     } catch (error) {
-      console.log(error);
       handleApiError(error);
     }
   }
