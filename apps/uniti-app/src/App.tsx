@@ -1,9 +1,8 @@
-import { Button, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { PrejoinPage } from "@/features/rooms/view/PrejoinPage";
 import { useAppInitializer } from "@/providers/app_initializer";
 import { RepositoryProvider } from "@/providers/repository_provider";
-import analytics from "@react-native-firebase/analytics";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const queryClient = new QueryClient();
