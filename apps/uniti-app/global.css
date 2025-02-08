@@ -4,21 +4,21 @@
 
 :root {
   --background: rgb(255 255 255);
-  --foreground: rgb(10 10 10);
-  --card: rgb(255 255 255);
-  --card-foreground: rgb(10 10 10);
-  --popover: rgb(255 255 255);
-  --popover-foreground: rgb(10 10 10);
+  --foreground: rgb(24 24 27);
   --primary: rgb(10 214 161);
   --primary-foreground: rgb(255 255 255);
-  --secondary: rgb(236 253 248);
-  --secondary-foreground: rgb(10 10 10);
-  --muted: rgb(236 253 248);
-  --muted-foreground: rgb(82 82 91);
-  --accent: rgb(236 253 248);
-  --accent-foreground: rgb(10 10 10);
+  --secondary: rgb(8 59 76);
+  --secondary-foreground: rgb(255 255 255);
+  --card: rgb(255 255 255);
+  --card-foreground: rgb(24 24 27);
+  --popover: rgb(255 255 255);
+  --popover-foreground: rgb(24 24 27);
+  --muted: rgb(244 244 245);
+  --muted-foreground: rgb(113 113 122);
+  --accent: rgb(237 254 249);
+  --accent-foreground: rgb(8 59 76);
   --destructive: rgb(239 68 68);
-  --destructive-foreground: rgb(250 250 250);
+  --destructive-foreground: rgb(255 255 255);
   --border: rgb(228 228 231);
   --input: rgb(228 228 231);
   --ring: rgb(10 214 161);
@@ -27,24 +27,24 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: rgb(10 10 10);
+    --background: rgb(9 24 31);
     --foreground: rgb(250 250 250);
-    --card: rgb(10 10 10);
-    --card-foreground: rgb(250 250 250);
-    --popover: rgb(10 10 10);
-    --popover-foreground: rgb(250 250 250);
     --primary: rgb(10 214 161);
     --primary-foreground: rgb(255 255 255);
-    --secondary: rgb(20 83 67);
-    --secondary-foreground: rgb(236 253 248);
-    --muted: rgb(20 83 67);
+    --secondary: rgb(13 84 108);
+    --secondary-foreground: rgb(255 255 255);
+    --card: rgb(13 34 44);
+    --card-foreground: rgb(250 250 250);
+    --popover: rgb(13 34 44);
+    --popover-foreground: rgb(250 250 250);
+    --muted: rgb(18 49 63);
     --muted-foreground: rgb(161 161 170);
-    --accent: rgb(20 83 67);
+    --accent: rgb(15 64 82);
     --accent-foreground: rgb(236 253 248);
     --destructive: rgb(127 29 29);
-    --destructive-foreground: rgb(248 248 248);
-    --border: rgb(39 39 42);
-    --input: rgb(39 39 42);
+    --destructive-foreground: rgb(250 250 250);
+    --border: rgb(23 54 68);
+    --input: rgb(23 54 68);
     --ring: rgb(10 214 161);
   }
 }
