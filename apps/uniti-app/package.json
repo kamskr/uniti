@@ -5,6 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "android": "expo run:android",
+    "clean": "git clean -xdf .cache .expo .turbo android ios node_modules",
     "ios": "expo run:ios",
     "start": "expo start",
     "web": "expo start --web"
@@ -28,6 +29,7 @@
     "nativewind": "^4.1.23",
     "react": "catalog:react18",
     "react-native": "0.76.6",
+    "react-native-css-interop": "~0.1.22",
     "react-native-reanimated": "^3.16.7",
     "react-native-safe-area-context": "^5.2.0",
     "use-sync-external-store": "^1.4.0",
