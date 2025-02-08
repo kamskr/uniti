@@ -17,6 +17,7 @@
     "@react-native-firebase/analytics": "^21.7.1",
     "@react-native-firebase/app": "^21.7.1",
     "@react-native-firebase/functions": "catalog:",
+    "@tamagui/config": "^1.124.3",
     "@tanstack/react-query": "catalog:",
     "@uniti/api-client": "workspace:*",
     "@uniti/domain-models": "workspace:*",
@@ -27,6 +28,7 @@
     "expo-status-bar": "~2.0.1",
     "react": "catalog:react18",
     "react-native": "0.76.6",
+    "tamagui": "^1.124.3",
     "use-sync-external-store": "^1.4.0",
     "zustand": "^5.0.3",
     "zustand-di": "^0.0.16"

@@ -4,6 +4,9 @@ import { PrejoinPage } from "@/features/rooms/view/PrejoinPage";
 import { useAppInitializer } from "@/providers/app_initializer";
 import { RepositoryProvider } from "@/providers/repository_provider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Button, TamaguiProvider } from "tamagui";
+
+import { tamaguiConfig } from "../tamagui.config";
 
 const queryClient = new QueryClient();
 
@@ -19,15 +22,24 @@ export default function App() {
   }
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <RepositoryProvider repositories={repositories}>
-        <View style={styles.container}>
-          <Text>Open up App.tsx to start working on your app!</Text>
-          <StatusBar style="auto" />
-          <PrejoinPage />
-        </View>
-      </RepositoryProvider>
-    </QueryClientProvider>
+    <TamaguiProvider config={tamaguiConfig}>
+      <QueryClientProvider client={queryClient}>
+        <RepositoryProvider repositories={repositories}>
+          <View style={styles.container}>
+            <Text>Open up App.tsx to start working on your app!</Text>
+            <StatusBar style="auto" />
+            {/* <PrejoinPage /> */}
+            <Button
+              onPress={() => {
+                console.log("Hello");
+              }}
+            >
+              Test
+            </Button>
+          </View>
+        </RepositoryProvider>
+      </QueryClientProvider>
+    </TamaguiProvider>
   );
 }
 
