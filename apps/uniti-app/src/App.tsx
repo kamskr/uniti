@@ -1,12 +1,13 @@
 import { StyleSheet, Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { PrejoinPage } from "@/features/rooms/view/PrejoinPage";
+// import { PrejoinPage } from "@/features/rooms/view/PrejoinPage";
 import { useAppInitializer } from "@/providers/app_initializer";
 import { RepositoryProvider } from "@/providers/repository_provider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Button, TamaguiProvider } from "tamagui";
+import { Button, TamaguiProvider, YStack } from "tamagui";
 
 import { tamaguiConfig } from "../tamagui.config";
+import { SheetDemo } from "./components/SheetDemo";
 
 const queryClient = new QueryClient();
 
@@ -25,7 +26,12 @@ export default function App() {
     <TamaguiProvider config={tamaguiConfig}>
       <QueryClientProvider client={queryClient}>
         <RepositoryProvider repositories={repositories}>
-          <View style={styles.container}>
+          <YStack
+            flex={1}
+            flexWrap="wrap"
+            justifyContent="center"
+            backgroundColor="#fff"
+          >
             <Text>Open up App.tsx to start working on your app!</Text>
             <StatusBar style="auto" />
             {/* <PrejoinPage /> */}
@@ -36,18 +42,10 @@ export default function App() {
             >
               Test
             </Button>
-          </View>
+            <SheetDemo />
+          </YStack>
         </RepositoryProvider>
       </QueryClientProvider>
     </TamaguiProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
