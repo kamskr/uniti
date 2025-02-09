@@ -10,6 +10,10 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@config-plugins/react-native-webrtc": "^10.0.0",
+    "@livekit/react-native": "^2.5.1",
+    "@livekit/react-native-expo-plugin": "^1.0.1",
+    "@livekit/react-native-webrtc": "^125.0.8",
     "@react-native-firebase/analytics": "^21.7.1",
     "@react-native-firebase/app": "^21.7.1",
     "@react-native-firebase/functions": "catalog:",
