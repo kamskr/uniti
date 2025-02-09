@@ -1,6 +1,7 @@
 import type { RootStackParamList } from "@/App";
 import type { NativeStackScreenProps } from "@react-navigation/native-stack";
-import { Button, Text, View } from "react-native";
+import { useState } from "react";
+import { Button, Text, TextInput, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 
 export type PrejoinPageProps = NativeStackScreenProps<
@@ -9,47 +10,43 @@ export type PrejoinPageProps = NativeStackScreenProps<
 >;
 
 export const PrejoinPage = ({ navigation }: PrejoinPageProps) => {
+  const [roomName, setRoomName] = useState<string>("");
+  const [participantName, setParticipantName] = useState<string>("");
+
+  const onSubmit = () => {
+    navigation.navigate("Room", {
+      roomName,
+      participantName,
+    });
+  };
+
   return (
     <View>
-      <StatusBar style="auto" />
-      <Text>Prejoin Page</Text>
-      <Button
-        title="Go to Jane's profile"
-        color="rgb(8 59 76)"
-        onPress={() =>
-          navigation.navigate("Room", {
-            roomName: "Jane",
-            participantName: "Jane",
-          })
-        }
-      />
+      <StatusBar style="light" />
+      <View className="flex-column m-4 gap-4">
+        <View className="flex-column gap-2">
+          <Text className="text-xl">Room Name</Text>
+          <TextInput
+            placeholder="uniti"
+            value={roomName}
+            onChangeText={setRoomName}
+          />
+        </View>
+        <View className="flex-column gap-2">
+          <Text className="text-xl">Participant Name</Text>
+          <TextInput
+            placeholder="Jane"
+            value={participantName}
+            onChangeText={setParticipantName}
+          />
+        </View>
+        <Button
+          title="Join Room"
+          color="rgb(8 59 76)"
+          onPress={onSubmit}
+          disabled={!roomName || !participantName}
+        />
+      </View>
     </View>
   );
-  // const livekitRepository = useLivekitRepository();
-  //
-  // const { isPending, error, data, isFetching, refetch } = useQuery({
-  //   queryKey: ["livekit-room"],
-  //   queryFn: () =>
-  //     livekitRepository.joinRoom({
-  //       roomName: "test",
-  //       participantName: "test",
-  //     }),
-  // });
-  //
-  // if (isFetching) return <Text>Loading...</Text>;
-  // if (error)
-  //   return (
-  //     <View>
-  //       <Text>Error: {JSON.stringify(error)}</Text>
-  //       <Button title="Refetch" onPress={() => refetch()} />
-  //     </View>
-  //   );
-  //
-  // return (
-  //   <View>
-  //     <Text>{data?.localParticipant.name}</Text>
-  //     <Text>{data?.localParticipant.name}</Text>
-  //     <Text>{data?.name}</Text>
-  //   </View>
-  // );
 };

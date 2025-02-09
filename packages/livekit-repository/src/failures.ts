@@ -18,10 +18,3 @@ export class GenerateAccessTokenFailure extends LivekitRepositoryFailure {
     this.name = "GenerateAccessTokenFailure";
   }
 }
-
-export class CreateRoomFailure extends LivekitRepositoryFailure {
-  constructor(error: unknown) {
-    super(error);
-    this.name = "CreateRoomFailure";
-  }
-}

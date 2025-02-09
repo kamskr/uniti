@@ -5,7 +5,6 @@ import { RepositoryProvider } from "@/providers/repository_provider";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { verifyInstallation } from "nativewind";
 
 import "../global.css";
 
@@ -25,7 +24,6 @@ const queryClient = new QueryClient();
 
 export default function App() {
   const { repositories, initializationError } = useAppInitializer();
-  verifyInstallation();
 
   if (initializationError) {
     return <Text>Failed to initialize app.</Text>;
