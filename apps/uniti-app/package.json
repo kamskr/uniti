@@ -4,11 +4,10 @@
   "private": true,
   "main": "index.ts",
   "scripts": {
-    "android": "expo run:android",
-    "clean": "git clean -xdf .cache .expo .turbo android ios node_modules",
-    "ios": "expo run:ios",
-    "start": "expo start",
-    "web": "expo start --web"
+    "dev": "APP_VARIANT=development npx expo run",
+    "stg": "APP_VARIANT=staging npx expo run",
+    "prod": "APP_VARIANT=production npx expo run",
+    "clean": "git clean -xdf .cache .expo .turbo android ios node_modules"
   },
   "dependencies": {
     "@config-plugins/react-native-webrtc": "^10.0.0",

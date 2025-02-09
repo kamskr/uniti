@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "610845088693",
+    "project_id": "uniti-dev-4d47e",
+    "storage_bucket": "uniti-dev-4d47e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610845088693:android:eb89dc2fab2ea6200817fc",
+        "android_client_info": {
+          "package_name": "world.gtmedia.uniti.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjGtFnxpkW_sAuCAfNE7YWNzMjzjM0haA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
