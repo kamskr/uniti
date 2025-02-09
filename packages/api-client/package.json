@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@react-native-firebase/functions": "^21.7.1",
+    "@react-native-firebase/functions": "catalog:",
     "@uniti/api-models": "workspace:*",
     "firebase": "11.2.0",
     "install": "^0.13.0",

@@ -1,11 +1,11 @@
-// import type { HttpsCallableT } from "@/types";
+import type { FirebaseFunctionsTypes } from "@react-native-firebase/functions";
+
 import { LivekitResource } from "./resources";
 
 export class ApiClient {
-	livekitResource: LivekitResource;
+  livekitResource: LivekitResource;
 
-	constructor() {
-		// this.livekitResource = new LivekitResource(httpsCallable);
-		this.livekitResource = new LivekitResource();
-	}
+  constructor(functions: FirebaseFunctionsTypes.Module) {
+    this.livekitResource = new LivekitResource(functions);
+  }
 }

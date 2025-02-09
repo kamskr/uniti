@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { TestComponent } from "@/features/test/TestComponent";
-import { useAppInitializer } from "@/store/app_initializer";
-import { RepositoryProvider } from "@/store/repository_provider";
+import { PrejoinPage } from "@/features/rooms/view/PrejoinPage";
+import { useAppInitializer } from "@/providers/app_initializer";
+import { RepositoryProvider } from "@/providers/repository_provider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const queryClient = new QueryClient();
@@ -22,9 +22,9 @@ export default function App() {
     <QueryClientProvider client={queryClient}>
       <RepositoryProvider repositories={repositories}>
         <View style={styles.container}>
-          <Text>Open up App.tsxx to start working on your app!</Text>
-          <TestComponent />
+          <Text>Open up App.tsx to start working on your app!</Text>
           <StatusBar style="auto" />
+          <PrejoinPage />
         </View>
       </RepositoryProvider>
     </QueryClientProvider>
