@@ -25,8 +25,11 @@
     "expo-build-properties": "~0.13.2",
     "expo-dev-client": "~5.0.11",
     "expo-status-bar": "~2.0.1",
+    "nativewind": "^4.1.23",
     "react": "catalog:react18",
     "react-native": "0.76.6",
+    "react-native-reanimated": "^3.16.7",
+    "react-native-safe-area-context": "^5.2.0",
     "use-sync-external-store": "^1.4.0",
     "zustand": "^5.0.3",
     "zustand-di": "^0.0.16"
@@ -36,7 +39,11 @@
     "@types/react": "catalog:react18",
     "@uniti/eslint-config": "workspace:*",
     "@uniti/prettier-config": "workspace:*",
+    "@uniti/tailwind-config": "workspace:*",
     "@uniti/tsconfig": "workspace:*",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "tailwindcss": "catalog:",
     "typescript": "catalog:"
   },
   "prettier": "@uniti/prettier-config"
