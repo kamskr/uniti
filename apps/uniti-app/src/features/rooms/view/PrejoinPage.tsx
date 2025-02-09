@@ -1,22 +1,20 @@
-import type { RootStackParamList } from "@/App";
-import type { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { useState } from "react";
 import { Button, Text, TextInput, View } from "react-native";
+import { useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 
-export type PrejoinPageProps = NativeStackScreenProps<
-  RootStackParamList,
-  "Prejoin"
->;
-
-export const PrejoinPage = ({ navigation }: PrejoinPageProps) => {
+export const PrejoinPage = () => {
   const [roomName, setRoomName] = useState<string>("");
   const [participantName, setParticipantName] = useState<string>("");
+  const router = useRouter();
 
   const onSubmit = () => {
-    navigation.navigate("Room", {
-      roomName,
-      participantName,
+    router.push({
+      pathname: "/room",
+      params: {
+        roomName: roomName,
+        participantName: participantName,
+      },
     });
   };
 

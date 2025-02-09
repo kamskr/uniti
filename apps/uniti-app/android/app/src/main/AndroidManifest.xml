@@ -32,6 +32,7 @@
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="world.gtmedia.uniti.dev"/>
         <data android:scheme="exp+uniti-app"/>
+        <data android:scheme="uniti-app"/>
       </intent-filter>
     </activity>
   </application>

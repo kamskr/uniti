@@ -2,6 +2,7 @@
   "expo": {
     "name": "uniti-app",
     "slug": "uniti-app",
+    "scheme": "uniti-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,14 +26,16 @@
       "package": "world.gtmedia.uniti.dev",
       "googleServicesFile": "./firebase/android/google-services.json"
     },
-    "web": {
-      "bundler": "metro",
-      "favicon": "./assets/favicon.png"
-    },
     "plugins": [
+      "expo-router",
+
       "@react-native-firebase/app",
       "@livekit/react-native-expo-plugin",
-      "@config-plugins/react-native-webrtc"
-    ]
+      "@config-plugins/react-native-webrtc",
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }

@@ -1,8 +1,5 @@
-import type { RootStackParamList } from "@/App";
-import type { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { useEffect } from "react";
 import { Button, Text, View } from "react-native";
-import { StatusBar } from "expo-status-bar";
 import { useLivekitRepository } from "@/providers/repository_provider";
 import {
   AudioSession,
@@ -12,14 +9,14 @@ import {
 } from "@livekit/react-native";
 import { useQuery } from "@tanstack/react-query";
 
-export type RoomPageProps = NativeStackScreenProps<RootStackParamList, "Room">;
+interface RoomPageProps {
+  roomName: string;
+  participantName: string;
+}
 
-export const RoomPage = ({ route }: RoomPageProps) => {
-  const { roomName, participantName } = route.params;
-
+export const RoomPage = ({ roomName, participantName }: RoomPageProps) => {
   return (
-    <View className="flex-1 items-center justify-center">
-      <StatusBar style="light" />
+    <View className="items-center justify-center h-full">
       <Text>Room Page: {roomName}</Text>
       <Text>Participant Name: {participantName}</Text>
       <RoomView roomName={roomName} participantName={participantName} />
@@ -83,8 +80,6 @@ const RoomView = ({
 const RoomConnectedView = () => {
   const remoteParticipants = useRemoteParticipants();
   const { localParticipant, isMicrophoneEnabled } = useLocalParticipant();
-
-  console.log("localParticipant", localParticipant);
 
   return (
     <View>
