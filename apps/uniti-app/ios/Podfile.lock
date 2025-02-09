@@ -1606,6 +1606,72 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
+  - react-native-safe-area-context (4.12.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - react-native-safe-area-context/common (= 4.12.0)
+    - react-native-safe-area-context/fabric (= 4.12.0)
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - react-native-safe-area-context/common (4.12.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - react-native-safe-area-context/fabric (4.12.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - react-native-safe-area-context/common
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - React-nativeconfig (0.76.6)
   - React-NativeModulesApple (0.76.6):
     - glog
@@ -1884,18 +1950,150 @@ PODS:
     - Firebase/Functions (= 11.7.0)
     - React-Core
     - RNFBApp
+  - RNReanimated (3.16.7):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - RNReanimated/reanimated (= 3.16.7)
+    - RNReanimated/worklets (= 3.16.7)
+    - Yoga
+  - RNReanimated/reanimated (3.16.7):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - RNReanimated/reanimated/apple (= 3.16.7)
+    - Yoga
+  - RNReanimated/reanimated/apple (3.16.7):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - RNReanimated/worklets (3.16.7):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - RNScreens (4.4.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-RCTImage
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - RNScreens/common (= 4.4.0)
+    - Yoga
+  - RNScreens/common (4.4.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-RCTImage
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - SocketRocket (0.7.1)
   - WebRTC-SDK (125.6422.07)
   - Yoga (0.0.0)
 
 DEPENDENCIES:
-  - boost (from `../../../node_modules/react-native/third-party-podspecs/boost.podspec`)
-  - DoubleConversion (from `../../../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
+  - "boost (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/third-party-podspecs/boost.podspec`)"
+  - "DoubleConversion (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)"
   - EXConstants (from `../../../node_modules/expo-constants/ios`)
   - EXJSONUtils (from `../../../node_modules/expo-json-utils/ios`)
   - EXManifests (from `../../../node_modules/expo-manifests/ios`)
-  - Expo (from `../../../node_modules/expo`)
-  - expo-dev-client (from `../../../node_modules/expo-dev-client/ios`)
+  - "Expo (from `../../../node_modules/.pnpm/expo@52.0.30_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__react-nati_0571f9fe508826c272faabf4195b4403/node_modules/expo`)"
+  - "expo-dev-client (from `../../../node_modules/.pnpm/expo-dev-client@5.0.11_expo@52.0.30_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+_cb101697ecce7bf756bbf209f3be7935/node_modules/expo-dev-client/ios`)"
   - expo-dev-launcher (from `../../../node_modules/expo-dev-launcher`)
   - expo-dev-menu (from `../../../node_modules/expo-dev-menu`)
   - expo-dev-menu-interface (from `../../../node_modules/expo-dev-menu-interface/ios`)
@@ -1905,75 +2103,78 @@ DEPENDENCIES:
   - ExpoKeepAwake (from `../../../node_modules/expo-keep-awake/ios`)
   - ExpoModulesCore (from `../../../node_modules/expo-modules-core`)
   - EXUpdatesInterface (from `../../../node_modules/expo-updates-interface/ios`)
-  - FBLazyVector (from `../../../node_modules/react-native/Libraries/FBLazyVector`)
-  - fmt (from `../../../node_modules/react-native/third-party-podspecs/fmt.podspec`)
-  - glog (from `../../../node_modules/react-native/third-party-podspecs/glog.podspec`)
-  - hermes-engine (from `../../../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
-  - "livekit-react-native (from `../../../node_modules/@livekit/react-native`)"
-  - "livekit-react-native-webrtc (from `../../../node_modules/@livekit/react-native-webrtc`)"
-  - "LiveKitExpoPlugin (from `../../../node_modules/@livekit/react-native-expo-plugin/ios`)"
-  - RCT-Folly (from `../../../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
-  - RCT-Folly/Fabric (from `../../../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
-  - RCTDeprecation (from `../../../node_modules/react-native/ReactApple/Libraries/RCTFoundation/RCTDeprecation`)
-  - RCTRequired (from `../../../node_modules/react-native/Libraries/Required`)
-  - RCTTypeSafety (from `../../../node_modules/react-native/Libraries/TypeSafety`)
-  - React (from `../../../node_modules/react-native/`)
-  - React-callinvoker (from `../../../node_modules/react-native/ReactCommon/callinvoker`)
-  - React-Core (from `../../../node_modules/react-native/`)
-  - React-Core/RCTWebSocket (from `../../../node_modules/react-native/`)
-  - React-CoreModules (from `../../../node_modules/react-native/React/CoreModules`)
-  - React-cxxreact (from `../../../node_modules/react-native/ReactCommon/cxxreact`)
-  - React-debug (from `../../../node_modules/react-native/ReactCommon/react/debug`)
-  - React-defaultsnativemodule (from `../../../node_modules/react-native/ReactCommon/react/nativemodule/defaults`)
-  - React-domnativemodule (from `../../../node_modules/react-native/ReactCommon/react/nativemodule/dom`)
-  - React-Fabric (from `../../../node_modules/react-native/ReactCommon`)
-  - React-FabricComponents (from `../../../node_modules/react-native/ReactCommon`)
-  - React-FabricImage (from `../../../node_modules/react-native/ReactCommon`)
-  - React-featureflags (from `../../../node_modules/react-native/ReactCommon/react/featureflags`)
-  - React-featureflagsnativemodule (from `../../../node_modules/react-native/ReactCommon/react/nativemodule/featureflags`)
-  - React-graphics (from `../../../node_modules/react-native/ReactCommon/react/renderer/graphics`)
-  - React-hermes (from `../../../node_modules/react-native/ReactCommon/hermes`)
-  - React-idlecallbacksnativemodule (from `../../../node_modules/react-native/ReactCommon/react/nativemodule/idlecallbacks`)
-  - React-ImageManager (from `../../../node_modules/react-native/ReactCommon/react/renderer/imagemanager/platform/ios`)
-  - React-jserrorhandler (from `../../../node_modules/react-native/ReactCommon/jserrorhandler`)
-  - React-jsi (from `../../../node_modules/react-native/ReactCommon/jsi`)
-  - React-jsiexecutor (from `../../../node_modules/react-native/ReactCommon/jsiexecutor`)
-  - React-jsinspector (from `../../../node_modules/react-native/ReactCommon/jsinspector-modern`)
-  - React-jsitracing (from `../../../node_modules/react-native/ReactCommon/hermes/executor/`)
-  - React-logger (from `../../../node_modules/react-native/ReactCommon/logger`)
-  - React-Mapbuffer (from `../../../node_modules/react-native/ReactCommon`)
-  - React-microtasksnativemodule (from `../../../node_modules/react-native/ReactCommon/react/nativemodule/microtasks`)
-  - React-nativeconfig (from `../../../node_modules/react-native/ReactCommon`)
-  - React-NativeModulesApple (from `../../../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
-  - React-perflogger (from `../../../node_modules/react-native/ReactCommon/reactperflogger`)
-  - React-performancetimeline (from `../../../node_modules/react-native/ReactCommon/react/performance/timeline`)
-  - React-RCTActionSheet (from `../../../node_modules/react-native/Libraries/ActionSheetIOS`)
-  - React-RCTAnimation (from `../../../node_modules/react-native/Libraries/NativeAnimation`)
-  - React-RCTAppDelegate (from `../../../node_modules/react-native/Libraries/AppDelegate`)
-  - React-RCTBlob (from `../../../node_modules/react-native/Libraries/Blob`)
-  - React-RCTFabric (from `../../../node_modules/react-native/React`)
-  - React-RCTImage (from `../../../node_modules/react-native/Libraries/Image`)
-  - React-RCTLinking (from `../../../node_modules/react-native/Libraries/LinkingIOS`)
-  - React-RCTNetwork (from `../../../node_modules/react-native/Libraries/Network`)
-  - React-RCTSettings (from `../../../node_modules/react-native/Libraries/Settings`)
-  - React-RCTText (from `../../../node_modules/react-native/Libraries/Text`)
-  - React-RCTVibration (from `../../../node_modules/react-native/Libraries/Vibration`)
-  - React-rendererconsistency (from `../../../node_modules/react-native/ReactCommon/react/renderer/consistency`)
-  - React-rendererdebug (from `../../../node_modules/react-native/ReactCommon/react/renderer/debug`)
-  - React-rncore (from `../../../node_modules/react-native/ReactCommon`)
-  - React-RuntimeApple (from `../../../node_modules/react-native/ReactCommon/react/runtime/platform/ios`)
-  - React-RuntimeCore (from `../../../node_modules/react-native/ReactCommon/react/runtime`)
-  - React-runtimeexecutor (from `../../../node_modules/react-native/ReactCommon/runtimeexecutor`)
-  - React-RuntimeHermes (from `../../../node_modules/react-native/ReactCommon/react/runtime`)
-  - React-runtimescheduler (from `../../../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
-  - React-timing (from `../../../node_modules/react-native/ReactCommon/react/timing`)
-  - React-utils (from `../../../node_modules/react-native/ReactCommon/react/utils`)
+  - "FBLazyVector (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/FBLazyVector`)"
+  - "fmt (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/third-party-podspecs/fmt.podspec`)"
+  - "glog (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/third-party-podspecs/glog.podspec`)"
+  - "hermes-engine (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)"
+  - "livekit-react-native (from `../node_modules/@livekit/react-native`)"
+  - "livekit-react-native-webrtc (from `../node_modules/@livekit/react-native-webrtc`)"
+  - "LiveKitExpoPlugin (from `../../../node_modules/.pnpm/@livekit+react-native-expo-plugin@1.0.1_@livekit+react-native@2.5.1_@livekit+react-nati_2099f38226d49893821e370a5735e8c4/node_modules/@livekit/react-native-expo-plugin/ios`)"
+  - "RCT-Folly (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)"
+  - "RCT-Folly/Fabric (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)"
+  - "RCTDeprecation (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactApple/Libraries/RCTFoundation/RCTDeprecation`)"
+  - "RCTRequired (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/Required`)"
+  - "RCTTypeSafety (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/TypeSafety`)"
+  - "React (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/`)"
+  - "React-callinvoker (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/callinvoker`)"
+  - "React-Core (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/`)"
+  - "React-Core/RCTWebSocket (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/`)"
+  - "React-CoreModules (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/React/CoreModules`)"
+  - "React-cxxreact (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/cxxreact`)"
+  - "React-debug (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/debug`)"
+  - "React-defaultsnativemodule (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/nativemodule/defaults`)"
+  - "React-domnativemodule (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/nativemodule/dom`)"
+  - "React-Fabric (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon`)"
+  - "React-FabricComponents (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon`)"
+  - "React-FabricImage (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon`)"
+  - "React-featureflags (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/featureflags`)"
+  - "React-featureflagsnativemodule (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/nativemodule/featureflags`)"
+  - "React-graphics (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/renderer/graphics`)"
+  - "React-hermes (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/hermes`)"
+  - "React-idlecallbacksnativemodule (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/nativemodule/idlecallbacks`)"
+  - "React-ImageManager (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/renderer/imagemanager/platform/ios`)"
+  - "React-jserrorhandler (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/jserrorhandler`)"
+  - "React-jsi (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/jsi`)"
+  - "React-jsiexecutor (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/jsiexecutor`)"
+  - "React-jsinspector (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/jsinspector-modern`)"
+  - "React-jsitracing (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/hermes/executor/`)"
+  - "React-logger (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/logger`)"
+  - "React-Mapbuffer (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon`)"
+  - "React-microtasksnativemodule (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/nativemodule/microtasks`)"
+  - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
+  - "React-nativeconfig (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon`)"
+  - "React-NativeModulesApple (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)"
+  - "React-perflogger (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/reactperflogger`)"
+  - "React-performancetimeline (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/performance/timeline`)"
+  - "React-RCTActionSheet (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/ActionSheetIOS`)"
+  - "React-RCTAnimation (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/NativeAnimation`)"
+  - "React-RCTAppDelegate (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/AppDelegate`)"
+  - "React-RCTBlob (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/Blob`)"
+  - "React-RCTFabric (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/React`)"
+  - "React-RCTImage (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/Image`)"
+  - "React-RCTLinking (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/LinkingIOS`)"
+  - "React-RCTNetwork (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/Network`)"
+  - "React-RCTSettings (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/Settings`)"
+  - "React-RCTText (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/Text`)"
+  - "React-RCTVibration (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/Vibration`)"
+  - "React-rendererconsistency (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/renderer/consistency`)"
+  - "React-rendererdebug (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/renderer/debug`)"
+  - "React-rncore (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon`)"
+  - "React-RuntimeApple (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/runtime/platform/ios`)"
+  - "React-RuntimeCore (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/runtime`)"
+  - "React-runtimeexecutor (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/runtimeexecutor`)"
+  - "React-RuntimeHermes (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/runtime`)"
+  - "React-runtimescheduler (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)"
+  - "React-timing (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/timing`)"
+  - "React-utils (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/utils`)"
   - ReactCodegen (from `build/generated/ios`)
-  - ReactCommon/turbomodule/core (from `../../../node_modules/react-native/ReactCommon`)
-  - "RNFBAnalytics (from `../../../node_modules/@react-native-firebase/analytics`)"
-  - "RNFBApp (from `../../../node_modules/@react-native-firebase/app`)"
-  - "RNFBFunctions (from `../../../node_modules/@react-native-firebase/functions`)"
-  - Yoga (from `../../../node_modules/react-native/ReactCommon/yoga`)
+  - "ReactCommon/turbomodule/core (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon`)"
+  - "RNFBAnalytics (from `../node_modules/@react-native-firebase/analytics`)"
+  - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
+  - "RNFBFunctions (from `../node_modules/@react-native-firebase/functions`)"
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
+  - RNScreens (from `../node_modules/react-native-screens`)
+  - "Yoga (from `../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/yoga`)"
 
 SPEC REPOS:
   trunk:
@@ -1998,9 +2199,9 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   boost:
-    :podspec: "../../../node_modules/react-native/third-party-podspecs/boost.podspec"
+    :podspec: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/third-party-podspecs/boost.podspec"
   DoubleConversion:
-    :podspec: "../../../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
+    :podspec: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   EXConstants:
     :path: "../../../node_modules/expo-constants/ios"
   EXJSONUtils:
@@ -2008,9 +2209,9 @@ EXTERNAL SOURCES:
   EXManifests:
     :path: "../../../node_modules/expo-manifests/ios"
   Expo:
-    :path: "../../../node_modules/expo"
+    :path: "../../../node_modules/.pnpm/expo@52.0.30_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__react-nati_0571f9fe508826c272faabf4195b4403/node_modules/expo"
   expo-dev-client:
-    :path: "../../../node_modules/expo-dev-client/ios"
+    :path: "../../../node_modules/.pnpm/expo-dev-client@5.0.11_expo@52.0.30_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+_cb101697ecce7bf756bbf209f3be7935/node_modules/expo-dev-client/ios"
   expo-dev-launcher:
     :path: "../../../node_modules/expo-dev-launcher"
   expo-dev-menu:
@@ -2030,140 +2231,146 @@ EXTERNAL SOURCES:
   EXUpdatesInterface:
     :path: "../../../node_modules/expo-updates-interface/ios"
   FBLazyVector:
-    :path: "../../../node_modules/react-native/Libraries/FBLazyVector"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/FBLazyVector"
   fmt:
-    :podspec: "../../../node_modules/react-native/third-party-podspecs/fmt.podspec"
+    :podspec: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/third-party-podspecs/fmt.podspec"
   glog:
-    :podspec: "../../../node_modules/react-native/third-party-podspecs/glog.podspec"
+    :podspec: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/third-party-podspecs/glog.podspec"
   hermes-engine:
-    :podspec: "../../../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
+    :podspec: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
     :tag: hermes-2024-11-12-RNv0.76.2-5b4aa20c719830dcf5684832b89a6edb95ac3d64
   livekit-react-native:
-    :path: "../../../node_modules/@livekit/react-native"
+    :path: "../node_modules/@livekit/react-native"
   livekit-react-native-webrtc:
-    :path: "../../../node_modules/@livekit/react-native-webrtc"
+    :path: "../node_modules/@livekit/react-native-webrtc"
   LiveKitExpoPlugin:
-    :path: "../../../node_modules/@livekit/react-native-expo-plugin/ios"
+    :path: "../../../node_modules/.pnpm/@livekit+react-native-expo-plugin@1.0.1_@livekit+react-native@2.5.1_@livekit+react-nati_2099f38226d49893821e370a5735e8c4/node_modules/@livekit/react-native-expo-plugin/ios"
   RCT-Folly:
-    :podspec: "../../../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
+    :podspec: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTDeprecation:
-    :path: "../../../node_modules/react-native/ReactApple/Libraries/RCTFoundation/RCTDeprecation"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactApple/Libraries/RCTFoundation/RCTDeprecation"
   RCTRequired:
-    :path: "../../../node_modules/react-native/Libraries/Required"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/Required"
   RCTTypeSafety:
-    :path: "../../../node_modules/react-native/Libraries/TypeSafety"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/TypeSafety"
   React:
-    :path: "../../../node_modules/react-native/"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/"
   React-callinvoker:
-    :path: "../../../node_modules/react-native/ReactCommon/callinvoker"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/callinvoker"
   React-Core:
-    :path: "../../../node_modules/react-native/"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/"
   React-CoreModules:
-    :path: "../../../node_modules/react-native/React/CoreModules"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/React/CoreModules"
   React-cxxreact:
-    :path: "../../../node_modules/react-native/ReactCommon/cxxreact"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/cxxreact"
   React-debug:
-    :path: "../../../node_modules/react-native/ReactCommon/react/debug"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/debug"
   React-defaultsnativemodule:
-    :path: "../../../node_modules/react-native/ReactCommon/react/nativemodule/defaults"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/nativemodule/defaults"
   React-domnativemodule:
-    :path: "../../../node_modules/react-native/ReactCommon/react/nativemodule/dom"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/nativemodule/dom"
   React-Fabric:
-    :path: "../../../node_modules/react-native/ReactCommon"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon"
   React-FabricComponents:
-    :path: "../../../node_modules/react-native/ReactCommon"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon"
   React-FabricImage:
-    :path: "../../../node_modules/react-native/ReactCommon"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon"
   React-featureflags:
-    :path: "../../../node_modules/react-native/ReactCommon/react/featureflags"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/featureflags"
   React-featureflagsnativemodule:
-    :path: "../../../node_modules/react-native/ReactCommon/react/nativemodule/featureflags"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/nativemodule/featureflags"
   React-graphics:
-    :path: "../../../node_modules/react-native/ReactCommon/react/renderer/graphics"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/renderer/graphics"
   React-hermes:
-    :path: "../../../node_modules/react-native/ReactCommon/hermes"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/hermes"
   React-idlecallbacksnativemodule:
-    :path: "../../../node_modules/react-native/ReactCommon/react/nativemodule/idlecallbacks"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/nativemodule/idlecallbacks"
   React-ImageManager:
-    :path: "../../../node_modules/react-native/ReactCommon/react/renderer/imagemanager/platform/ios"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/renderer/imagemanager/platform/ios"
   React-jserrorhandler:
-    :path: "../../../node_modules/react-native/ReactCommon/jserrorhandler"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/jserrorhandler"
   React-jsi:
-    :path: "../../../node_modules/react-native/ReactCommon/jsi"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/jsi"
   React-jsiexecutor:
-    :path: "../../../node_modules/react-native/ReactCommon/jsiexecutor"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
-    :path: "../../../node_modules/react-native/ReactCommon/jsinspector-modern"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/jsinspector-modern"
   React-jsitracing:
-    :path: "../../../node_modules/react-native/ReactCommon/hermes/executor/"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/hermes/executor/"
   React-logger:
-    :path: "../../../node_modules/react-native/ReactCommon/logger"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/logger"
   React-Mapbuffer:
-    :path: "../../../node_modules/react-native/ReactCommon"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon"
   React-microtasksnativemodule:
-    :path: "../../../node_modules/react-native/ReactCommon/react/nativemodule/microtasks"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/nativemodule/microtasks"
+  react-native-safe-area-context:
+    :path: "../node_modules/react-native-safe-area-context"
   React-nativeconfig:
-    :path: "../../../node_modules/react-native/ReactCommon"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon"
   React-NativeModulesApple:
-    :path: "../../../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios"
   React-perflogger:
-    :path: "../../../node_modules/react-native/ReactCommon/reactperflogger"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/reactperflogger"
   React-performancetimeline:
-    :path: "../../../node_modules/react-native/ReactCommon/react/performance/timeline"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/performance/timeline"
   React-RCTActionSheet:
-    :path: "../../../node_modules/react-native/Libraries/ActionSheetIOS"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
-    :path: "../../../node_modules/react-native/Libraries/NativeAnimation"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/NativeAnimation"
   React-RCTAppDelegate:
-    :path: "../../../node_modules/react-native/Libraries/AppDelegate"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/AppDelegate"
   React-RCTBlob:
-    :path: "../../../node_modules/react-native/Libraries/Blob"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/Blob"
   React-RCTFabric:
-    :path: "../../../node_modules/react-native/React"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/React"
   React-RCTImage:
-    :path: "../../../node_modules/react-native/Libraries/Image"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/Image"
   React-RCTLinking:
-    :path: "../../../node_modules/react-native/Libraries/LinkingIOS"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/LinkingIOS"
   React-RCTNetwork:
-    :path: "../../../node_modules/react-native/Libraries/Network"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/Network"
   React-RCTSettings:
-    :path: "../../../node_modules/react-native/Libraries/Settings"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/Settings"
   React-RCTText:
-    :path: "../../../node_modules/react-native/Libraries/Text"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/Text"
   React-RCTVibration:
-    :path: "../../../node_modules/react-native/Libraries/Vibration"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/Libraries/Vibration"
   React-rendererconsistency:
-    :path: "../../../node_modules/react-native/ReactCommon/react/renderer/consistency"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/renderer/consistency"
   React-rendererdebug:
-    :path: "../../../node_modules/react-native/ReactCommon/react/renderer/debug"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/renderer/debug"
   React-rncore:
-    :path: "../../../node_modules/react-native/ReactCommon"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon"
   React-RuntimeApple:
-    :path: "../../../node_modules/react-native/ReactCommon/react/runtime/platform/ios"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/runtime/platform/ios"
   React-RuntimeCore:
-    :path: "../../../node_modules/react-native/ReactCommon/react/runtime"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/runtime"
   React-runtimeexecutor:
-    :path: "../../../node_modules/react-native/ReactCommon/runtimeexecutor"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/runtimeexecutor"
   React-RuntimeHermes:
-    :path: "../../../node_modules/react-native/ReactCommon/react/runtime"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/runtime"
   React-runtimescheduler:
-    :path: "../../../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/renderer/runtimescheduler"
   React-timing:
-    :path: "../../../node_modules/react-native/ReactCommon/react/timing"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/timing"
   React-utils:
-    :path: "../../../node_modules/react-native/ReactCommon/react/utils"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/react/utils"
   ReactCodegen:
     :path: build/generated/ios
   ReactCommon:
-    :path: "../../../node_modules/react-native/ReactCommon"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon"
   RNFBAnalytics:
-    :path: "../../../node_modules/@react-native-firebase/analytics"
+    :path: "../node_modules/@react-native-firebase/analytics"
   RNFBApp:
-    :path: "../../../node_modules/@react-native-firebase/app"
+    :path: "../node_modules/@react-native-firebase/app"
   RNFBFunctions:
-    :path: "../../../node_modules/@react-native-firebase/functions"
+    :path: "../node_modules/@react-native-firebase/functions"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
+  RNScreens:
+    :path: "../node_modules/react-native-screens"
   Yoga:
-    :path: "../../../node_modules/react-native/ReactCommon/yoga"
+    :path: "../../../node_modules/.pnpm/react-native@0.76.6_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
   boost: 1dca942403ed9342f98334bf4c3621f011aa7946
@@ -2234,6 +2441,7 @@ SPEC CHECKSUMS:
   React-logger: 162c09cc432b02d4a0db31b1d98f6df5243a2679
   React-Mapbuffer: eab34f6d54d26931c5f70eb19da1e36162d87bbd
   React-microtasksnativemodule: 069ef12656a93e0344851e18de6cfb7bdfd9a59e
+  react-native-safe-area-context: 908ee3cf872b29ed987a0514f1a6ccbf57f0fef4
   React-nativeconfig: 014403841159c621de6d2f888ad829aac530f93e
   React-NativeModulesApple: 5bebad70ac824fefe9c0a04a5e2c829a91365b9d
   React-perflogger: 4e80a5b8d61dfb38024e7d5b8efaf9ce1037d31f
@@ -2259,11 +2467,13 @@ SPEC CHECKSUMS:
   React-runtimescheduler: eddc4ad43c6093ffd26324ad5eee69ff9315b88e
   React-timing: 042cb96cc87f2035d284a058b468aa3e5505b5ba
   React-utils: 313aee0d3b79d0f43ddc9e8aebf789b56469aff8
-  ReactCodegen: f48742c7823f5887ac5024614fb069c72f2b2fdb
+  ReactCodegen: ec57e3f7474700f152c924bf2eb6ec90484e7bc3
   ReactCommon: 407be731d21caa89dfb2f648868865b76c84d2d2
   RNFBAnalytics: 38a750042b5cf988c61b3e33d1491c182da4b536
   RNFBApp: a5395f4df3ea5d19697bdc99f5a0400903e5fff6
   RNFBFunctions: 5158b4320aca077acdf22e8bacaeb1b6ab14b120
+  RNReanimated: 49abc2c75b213c10ff38c6573a9c60df6a660acc
+  RNScreens: 8ae716a7e26b9ecee7f2856e6ff47b8e7e253ee8
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   WebRTC-SDK: dff00a3892bc570b6014e046297782084071657e
   Yoga: fd4ca32b81c4069b4175ad9460b042e17db94b66

@@ -1,5 +1,5 @@
+import type { Repositories } from "@/providers/repository_provider";
 import { useEffect, useState } from "react";
-import { Repositories } from "@/providers/repository_provider";
 import functions from "@react-native-firebase/functions";
 
 import { ApiClient } from "@uniti/api-client";
@@ -23,7 +23,9 @@ export const useAppInitializer = () => {
         }
 
         const apiClient = new ApiClient(functionsInstance);
-        const livekitRepository = new LivekitRepository("ws://localhost:7880", apiClient);
+        // for android emulator use "ws://10.0.2.2:7880",
+
+        const livekitRepository = new LivekitRepository(apiClient);
 
         const repositories: Repositories = {
           apiClient,
@@ -32,6 +34,7 @@ export const useAppInitializer = () => {
 
         setRepositories(repositories);
       } catch (e) {
+        console.error("Failed to initialize app:", e);
         setInitializationError(Error("Failed to initialize app."));
       }
     };
