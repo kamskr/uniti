@@ -1,13 +1,26 @@
-import { StyleSheet, Text, View } from "react-native";
-import { StatusBar } from "expo-status-bar";
-// import { PrejoinPage } from "@/features/rooms/view/PrejoinPage";
+import type { ParamListBase } from "@react-navigation/native";
+import { Text } from "react-native";
 import { useAppInitializer } from "@/providers/app_initializer";
 import { RepositoryProvider } from "@/providers/repository_provider";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { verifyInstallation } from "nativewind";
 
 import "../global.css";
 
+import { PrejoinPage } from "@/features/rooms/view/PrejoinPage";
+import { RoomPage } from "@/features/rooms/view/RoomPage";
+
+export interface RootStackParamList extends ParamListBase {
+  Prejoin: undefined;
+  Room: {
+    roomName: string;
+    participantName: string;
+  };
+}
+
+const Stack = createNativeStackNavigator<RootStackParamList>();
 const queryClient = new QueryClient();
 
 export default function App() {
@@ -25,24 +38,33 @@ export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <RepositoryProvider repositories={repositories}>
-        <View style={styles.container}>
-          <Text>Open up App.tsx to start working on your app!</Text>
-          <Text className="text-4xl font-bold uppercase text-primary">
-            Delete
-          </Text>
-          <StatusBar style="auto" />
-          {/* <PrejoinPage /> */}
-        </View>
+        <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen
+              name="Prejoin"
+              component={PrejoinPage}
+              options={{
+                title: "Uniti Engine Test",
+                headerStyle: {
+                  backgroundColor: "rgb(10 214 161)",
+                },
+                headerTintColor: "#fff",
+              }}
+            />
+            <Stack.Screen
+              name="Room"
+              component={RoomPage}
+              options={({ route }) => ({
+                title: "Room " + route.params.roomName,
+                headerStyle: {
+                  backgroundColor: "rgb(10 214 161)",
+                },
+                headerTintColor: "#fff",
+              })}
+            />
+          </Stack.Navigator>
+        </NavigationContainer>
       </RepositoryProvider>
     </QueryClientProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

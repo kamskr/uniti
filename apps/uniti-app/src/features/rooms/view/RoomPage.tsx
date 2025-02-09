@@ -3,25 +3,19 @@ import type { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { Button, Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 
-export type PrejoinPageProps = NativeStackScreenProps<
-  RootStackParamList,
-  "Prejoin"
->;
+export type RoomPageProps = NativeStackScreenProps<RootStackParamList, "Room">;
 
-export const PrejoinPage = ({ navigation }: PrejoinPageProps) => {
+export const RoomPage = ({ navigation, route }: RoomPageProps) => {
+  const { roomName, participantName } = route.params;
   return (
     <View>
       <StatusBar style="auto" />
-      <Text>Prejoin Page</Text>
+      <Text>Room Page: {roomName}</Text>
+      <Text>Participant Name: {participantName}</Text>
       <Button
-        title="Go to Jane's profile"
+        title="Go to Prejoin Page"
         color="rgb(8 59 76)"
-        onPress={() =>
-          navigation.navigate("Room", {
-            roomName: "Jane",
-            participantName: "Jane",
-          })
-        }
+        onPress={() => navigation.pop()}
       />
     </View>
   );
