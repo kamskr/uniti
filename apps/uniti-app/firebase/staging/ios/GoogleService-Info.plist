@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyAhFYBx_J-yvDKSqvCZlCRGB7gihP-o27Y</string>
+	<string>AIzaSyCEgRvMhYKLL9c9Tzs4cMIQiztwyBbUMHo</string>
 	<key>GCM_SENDER_ID</key>
-	<string>610845088693</string>
+	<string>937232349320</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>world.gtmedia.uniti.dev</string>
+	<string>world.gtmedia.uniti.stg</string>
 	<key>PROJECT_ID</key>
-	<string>uniti-dev-4d47e</string>
+	<string>uniti-stg</string>
 	<key>STORAGE_BUCKET</key>
-	<string>uniti-dev-4d47e.firebasestorage.app</string>
+	<string>uniti-stg.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:610845088693:ios:8635f729518984810817fc</string>
+	<string>1:937232349320:ios:4bf1cee9ddb9a768b9873d</string>
 </dict>
 </plist>

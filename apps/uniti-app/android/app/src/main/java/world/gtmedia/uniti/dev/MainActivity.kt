@@ -1,4 +1,4 @@
-package world.gtmedia.uniti.stg
+package world.gtmedia.uniti.dev
 
 import android.os.Build
 import android.os.Bundle

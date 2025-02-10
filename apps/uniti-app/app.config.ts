@@ -42,7 +42,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     splash: {
       image: "./assets/splash-icon.png",
       resizeMode: "contain",
-      backgroundColor: "#0AD6A1",
+      backgroundColor: "#083B4C",
     },
     updates: {
       fallbackToCacheTimeout: 0,
@@ -70,6 +70,14 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       "@react-native-firebase/app",
       "@livekit/react-native-expo-plugin",
       "@config-plugins/react-native-webrtc",
+      [
+        "expo-build-properties",
+        {
+          ios: {
+            useFrameworks: "static",
+          },
+        },
+      ],
     ],
   };
 };

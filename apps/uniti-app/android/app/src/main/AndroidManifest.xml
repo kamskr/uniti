@@ -30,12 +30,9 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="world.gtmedia.uniti.dev"/>
-        <data android:scheme="exp+uniti-app"/>
-        <data android:scheme="uniti-app"/>
         <data android:scheme="uniti"/>
+        <data android:scheme="world.gtmedia.uniti.dev"/>
         <data android:scheme="exp+uniti"/>
-        <data android:scheme="world.gtmedia.uniti.stg"/>
       </intent-filter>
     </activity>
   </application>

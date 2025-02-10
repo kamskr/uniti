@@ -1,13 +1,32 @@
 {
   "project_info": {
-    "project_number": "610845088693",
-    "project_id": "uniti-dev-4d47e",
-    "storage_bucket": "uniti-dev-4d47e.firebasestorage.app"
+    "project_number": "937232349320",
+    "project_id": "uniti-stg",
+    "storage_bucket": "uniti-stg.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:610845088693:android:eb89dc2fab2ea6200817fc",
+        "mobilesdk_app_id": "1:937232349320:android:a8b4d89a29b40aa3b9873d",
+        "android_client_info": {
+          "package_name": "world.gtmedia.uniti"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUWzfNz3hGL4PB6twNYHY5vaxuKAPq7SU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937232349320:android:0354ee55b6e718efb9873d",
         "android_client_info": {
           "package_name": "world.gtmedia.uniti.dev"
         }
@@ -15,7 +34,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAjGtFnxpkW_sAuCAfNE7YWNzMjzjM0haA"
+          "current_key": "AIzaSyCUWzfNz3hGL4PB6twNYHY5vaxuKAPq7SU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937232349320:android:206f37e0e673ff81b9873d",
+        "android_client_info": {
+          "package_name": "world.gtmedia.uniti.stg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUWzfNz3hGL4PB6twNYHY5vaxuKAPq7SU"
         }
       ],
       "services": {

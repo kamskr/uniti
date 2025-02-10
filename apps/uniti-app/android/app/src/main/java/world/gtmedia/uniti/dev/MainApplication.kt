@@ -1,4 +1,4 @@
-package world.gtmedia.uniti.stg
+package world.gtmedia.uniti.dev
 
 import android.app.Application
 import android.content.res.Configuration
