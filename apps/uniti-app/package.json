@@ -4,10 +4,15 @@
   "private": true,
   "main": "index.ts",
   "scripts": {
-    "dev": "APP_VARIANT=development npx expo run",
-    "stg": "APP_VARIANT=staging npx expo run",
-    "prod": "APP_VARIANT=production npx expo run",
-    "clean": "git clean -xdf .cache .expo .turbo android ios node_modules"
+    "prebuild:dev": "APP_VARIANT=development npx expo prebuild",
+    "prebuild:stg": "APP_VARIANT=staging npx expo prebuild",
+    "prebuild:prod": "APP_VARIANT=production npx expo prebuild",
+    "dev": "APP_VARIANT=development npx expo prebuild && npx expo run",
+    "stg": "APP_VARIANT=staging npx expo prebuild && npx expo run",
+    "prod": "APP_VARIANT=production npx expo prebuild && npx expo run",
+    "clean": "git clean -xdf .cache .expo .turbo android ios node_modules",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
   },
   "dependencies": {
     "@config-plugins/react-native-webrtc": "^10.0.0",

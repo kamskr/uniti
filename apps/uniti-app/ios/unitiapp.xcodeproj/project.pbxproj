@@ -396,8 +396,8 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = world.gtmedia.uniti.dev;
-				PRODUCT_NAME = unitiapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "world.gtmedia.uniti.stg";
+				PRODUCT_NAME = "UnitiSTG";
 				SWIFT_OBJC_BRIDGING_HEADER = "unitiapp/unitiapp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -425,8 +425,8 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = world.gtmedia.uniti.dev;
-				PRODUCT_NAME = unitiapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "world.gtmedia.uniti.stg";
+				PRODUCT_NAME = "UnitiSTG";
 				SWIFT_OBJC_BRIDGING_HEADER = "unitiapp/unitiapp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -502,7 +502,7 @@
 					"$(inherited)",
 					" ",
 				);
-				REACT_NATIVE_PATH = "${PODS_ROOT}/../../../../node_modules/react-native";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../../../node_modules/.pnpm/react-native@0.76.7_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				USE_HERMES = true;
@@ -569,7 +569,7 @@
 					"$(inherited)",
 					" ",
 				);
-				REACT_NATIVE_PATH = "${PODS_ROOT}/../../../../node_modules/react-native";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../../../node_modules/.pnpm/react-native@0.76.7_@babel+core@7.26.7_@babel+preset-env@7.26.7_@babel+core@7.26.7__@types+react@18.3.18_react@18.3.1/node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
