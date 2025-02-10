@@ -4,6 +4,7 @@
   "private": true,
   "main": "index.ts",
   "scripts": {
+    "removeBuild": "rm -rf android ios",
     "prebuild:dev": "APP_VARIANT=development npx expo prebuild",
     "prebuild:stg": "APP_VARIANT=staging npx expo prebuild",
     "prebuild:prod": "APP_VARIANT=production npx expo prebuild",
