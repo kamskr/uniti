@@ -5,12 +5,12 @@
   "main": "index.ts",
   "scripts": {
     "removeBuild": "rm -rf android ios",
-    "prebuild:dev": "APP_VARIANT=development npx expo prebuild",
-    "prebuild:stg": "APP_VARIANT=staging npx expo prebuild",
-    "prebuild:prod": "APP_VARIANT=production npx expo prebuild",
-    "dev": "APP_VARIANT=development npx expo run",
-    "stg": "APP_VARIANT=staging npx expo run",
-    "prod": "APP_VARIANT=production npx expo run",
+    "prebuild:dev": "NODE_ENV=development npx expo prebuild",
+    "prebuild:stg": "NODE_ENV=staging npx expo prebuild",
+    "prebuild:prod": "NODE_ENV=production npx expo prebuild",
+    "dev": "NODE_ENV=development npx expo run",
+    "stg": "NODE_ENV=staging npx expo run",
+    "prod": "NODE_ENV=production npx expo run",
     "clean": "git clean -xdf .cache .expo .turbo android ios node_modules",
     "android": "expo run:android",
     "ios": "expo run:ios"

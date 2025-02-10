@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Button, Text, View } from "react-native";
+import Constants from "expo-constants";
 import { useLivekitRepository } from "@/providers/repository_provider";
 import {
   AudioSession,
@@ -16,7 +17,7 @@ interface RoomPageProps {
 
 export const RoomPage = ({ roomName, participantName }: RoomPageProps) => {
   return (
-    <View className="items-center justify-center h-full">
+    <View className="h-full items-center justify-center">
       <Text>Room Page: {roomName}</Text>
       <Text>Participant Name: {participantName}</Text>
       <RoomView roomName={roomName} participantName={participantName} />
@@ -33,6 +34,8 @@ const RoomView = ({
 }) => {
   const livekitRepository = useLivekitRepository();
 
+  const livekitUrl = Constants.expoConfig?.extra?.LIVEKIT_WEBSOCKET_URL;
+  const sentryDsn = Constants.expoConfig?.extra?.SENTRY_DSN;
   const { isFetching, error, data, refetch } = useQuery({
     queryKey: ["livekit-room"],
     queryFn: () =>
@@ -66,7 +69,7 @@ const RoomView = ({
 
   return (
     <LiveKitRoom
-      serverUrl={"ws://localhost:7880"}
+      serverUrl={livekitUrl}
       token={data}
       connect={true}
       audio={true}

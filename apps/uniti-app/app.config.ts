@@ -1,8 +1,7 @@
 import type { ConfigContext, ExpoConfig } from "@expo/config";
 
-const APP_VARIANT = process.env.APP_VARIANT;
-
 type Variant = "development" | "staging" | "production";
+const NODE_ENV = process.env.NODE_ENV;
 
 const getVariantConfig = (variant: Variant) => {
   const configs = {
@@ -23,11 +22,14 @@ const getVariantConfig = (variant: Variant) => {
     },
   };
 
-  return configs[variant] || configs.production;
+  if (!(variant in configs)) {
+    throw new Error(`Invalid environment variant: ${variant}`);
+  }
+  return configs[variant];
 };
 
 export default ({ config }: ConfigContext): ExpoConfig => {
-  const variantConfig = getVariantConfig(APP_VARIANT as Variant);
+  const variantConfig = getVariantConfig(NODE_ENV as Variant);
 
   return {
     ...config,
@@ -41,7 +43,6 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     newArchEnabled: true,
     splash: {
       image: "./assets/splash-icon.png",
-      resizeMode: "contain",
       backgroundColor: "#083B4C",
     },
     updates: {
@@ -79,5 +80,9 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         },
       ],
     ],
+    extra: {
+      LIVEKIT_WEBSOCKET_URL: process.env.LIVEKIT_WEBSOCKET_URL,
+      SENTRY_DSN: process.env.SENTRY_DSN,
+    },
   };
 };

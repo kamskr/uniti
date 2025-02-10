@@ -4,7 +4,7 @@ import { useAppInitializer } from "@/providers/app_initializer";
 import { RepositoryProvider } from "@/providers/repository_provider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import "../../global.css";
+import "../global.css";
 
 const queryClient = new QueryClient();
 

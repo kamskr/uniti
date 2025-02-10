@@ -23,7 +23,6 @@ export const useAppInitializer = () => {
         }
 
         const apiClient = new ApiClient(functionsInstance);
-        // for android emulator use "ws://10.0.2.2:7880",
 
         const livekitRepository = new LivekitRepository(apiClient);
 

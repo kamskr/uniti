@@ -1,7 +1,7 @@
 import React, { createContext, useContext } from "react";
 
-import { ApiClient } from "@uniti/api-client";
-import { LivekitRepository } from "@uniti/livekit-repository";
+import type { ApiClient } from "@uniti/api-client";
+import type { LivekitRepository } from "@uniti/livekit-repository";
 
 export interface Repositories {
   apiClient: ApiClient;
