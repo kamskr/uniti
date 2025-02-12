@@ -1,7 +1,7 @@
 import type { ConfigContext, ExpoConfig } from "@expo/config";
 
 type Variant = "development" | "staging" | "production";
-const NODE_ENV = process.env.NODE_ENV;
+const APP_VARIANT = process.env.APP_VARIANT;
 
 const getVariantConfig = (variant: Variant) => {
   const configs = {
@@ -29,7 +29,7 @@ const getVariantConfig = (variant: Variant) => {
 };
 
 export default ({ config }: ConfigContext): ExpoConfig => {
-  const variantConfig = getVariantConfig(NODE_ENV as Variant);
+  const variantConfig = getVariantConfig(APP_VARIANT as Variant);
 
   return {
     ...config,
@@ -81,6 +81,9 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       ],
     ],
     extra: {
+      eas: {
+        projectId: "938718fe-8bfc-4549-a8fb-f234b95cd176",
+      },
       LIVEKIT_WEBSOCKET_URL: process.env.LIVEKIT_WEBSOCKET_URL,
       SENTRY_DSN: process.env.SENTRY_DSN,
     },
